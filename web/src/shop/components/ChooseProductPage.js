@@ -58,11 +58,11 @@ class ChooseProductPage extends React.Component {
   render() {
     let messageAtTop;
     switch (this.props.shopType) {
-      case 'bikes':
-        messageAtTop = <FormattedMessage id='Buy a Bike' />;
+      case 'medical-packages':
+        messageAtTop = <FormattedMessage id='Buy a Medical Insurance Packages' />;
         break;
       case 'smart-phones':
-        messageAtTop = <FormattedMessage id='Buy a Smart Phone' />;
+        messageAtTop = <FormattedMessage id='Buy a sssSmart Phone' />;
         break;
       case 'skis':
         messageAtTop = <FormattedMessage id='Buy a Pair of Skis' />;

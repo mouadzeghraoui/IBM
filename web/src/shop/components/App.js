@@ -9,8 +9,8 @@ import { withRouter } from 'react-router-dom';
 const app = ({ children, shopType }) => {
   let shopHeadingMessage;
   switch (shopType) {
-    case 'bikes':
-      shopHeadingMessage = <FormattedMessage id='Bike Shop' />;
+    case 'medical-packages':
+      shopHeadingMessage = <FormattedMessage id='Medical Packages Shop' />;
       break;
     case 'smart-phones':
       shopHeadingMessage = <FormattedMessage id='Smart Phone Shop' />;

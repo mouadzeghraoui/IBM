@@ -1,33 +1,23 @@
 export default {
-  "bikes": [
+  "medical-packages": [
     {
-      "brand": "Canyon",
-      "model": "Spectral AL 6.0",
+      "model": "Gold",
       "price": 3420.0,
       "imgSrc": "/img/products/bike1.png",
       "description": `Colour: Grey <br> Type: All-Mountain`
     },
     {
-      "brand": "Centurion",
-      "model": "No Pogo 800.27",
+      "model": "Silver",
       "price": 2110.0,
       "imgSrc": "/img/products/bike2.png",
       "description": `Colour: Grey <br> Type: All-Mountain`
     },
     {
-      "brand": "Popal",
-      "model": "E-VO9.0",
+      "model": "bronze",
       "price": 4050.0,
       "imgSrc": "/img/products/bike3.png",
       "description": `Colour: Black <br> Type: Pedelec`
     },
-    {
-      "brand": "Serious",
-      "model": "Bear Rock CX500",
-      "price": 1023.0,
-      "imgSrc": "/img/products/bike4.png",
-      "description": `Colour: Black <br> Typ: Pedelec`
-    }
   ],
   "smart-phones": [
     {

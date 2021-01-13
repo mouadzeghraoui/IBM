@@ -6,7 +6,7 @@ const readCryptoFile =
   filename => readFileSync(resolve(basePath, filename)).toString();
 const config = {
   isCloud: false,
-  isUbuntu: false,
+  isUbuntu: true,
   channelName: 'default',
   channelConfig: readFileSync(resolve(__dirname, '../../channel.tx')),
   chaincodeId: 'bcins',
@@ -115,7 +115,7 @@ export const DEFAULT_CONTRACT_TYPES = [
     formulaPerDay: 'price * 0.01 + 0.05',
     maxSumInsured: 4300.00,
     theftInsured: true,
-    description: 'Contract for Mountain Bikers',
+    description: 'Contract packages insurance',
     conditions: 'Contract Terms here',
     minDurationDays: 1,
     maxDurationDays: 7,
@@ -127,7 +127,7 @@ export const DEFAULT_CONTRACT_TYPES = [
     formulaPerDay: 'price * 0.02',
     maxSumInsured: 3500.00,
     theftInsured: false,
-    description: 'Insure Your Bike',
+    description: 'Contract type',
     conditions: 'Simple contract terms.',
     minDurationDays: 3,
     maxDurationDays: 10,

@@ -6,8 +6,8 @@ dockerFabricPull() {
   for IMAGES in peer orderer ccenv; do
       echo "==> FABRIC IMAGE: $IMAGES"
       echo
-      docker pull hyperledger/fabric-$IMAGES:$FABRIC_TAG
-      docker tag hyperledger/fabric-$IMAGES:$FABRIC_TAG hyperledger/fabric-$IMAGES
+      docker pull hyperledger/fabric-$IMAGES:1.4.1
+      docker tag hyperledger/fabric-$IMAGES:1.4.1 hyperledger/fabric-$IMAGES
   done
 }
 
@@ -15,8 +15,8 @@ dockerCaPull() {
       local CA_TAG=$1
       echo "==> FABRIC CA IMAGE"
       echo
-      docker pull hyperledger/fabric-ca:$CA_TAG
-      docker tag hyperledger/fabric-ca:$CA_TAG hyperledger/fabric-ca
+      docker pull hyperledger/fabric-ca:1.2.1
+      docker tag hyperledger/fabric-ca:1.2.1 hyperledger/fabric-ca
 }
 
 BUILD=
