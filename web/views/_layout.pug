@@ -32,18 +32,16 @@ html(lang='en')
               li(role='presentation', class=(homeActive ? 'ibm-highlight' : ''))
                 a(role='menuitem', href='/') #{ __('Home') }
               li.ibm-haschildlist(role='presentation', class=(shopActive ? 'ibm-highlight' : ''))
-                span(role='menuitem') #{ __('Shop') }
+                span(role='menuitem') #{ __('Subscription') }
                 ul(role='menu')
                   li(role='presentation', class=(packagesActive ? 'ibm-highlight' : ''))
-                    a(role='menuitem', href='/shop/medical-packages') #{ __('medical-packages') }
+                    a(role='menuitem', href='/shop/medical-packages') #{ __('Medical Packages') }
                   li(role='presentation', class=(smartPhonesActive ? 'ibm-highlight' : ''))
-                    a(role='menuitem', href='/shop/smart-phones') #{ __('Smart Phones') }
+                    a(role='menuitem', href='/shop/smart-phones') #{ __('Dental Insurance subscription') }
                   li(role='presentation', class=(skisActive ? 'ibm-highlight' : ''))
-                    a(role='menuitem', href='/shop/skis') #{ __('Skis') }
+                    a(role='menuitem', href='/shop/skis') #{ __('Vision Insurance Subscription') }
               li(role='presentation', class=(policeActive ? 'ibm-highlight' : ''))
-                a(role='menuitem', href='/police') #{ __('Police') }
-              li(role='presentation', class=(repairShopActive ? 'ibm-highlight' : ''))
-                a(role='menuitem', href='/repair-shop') #{ __('Repair Service') }
+                a(role='menuitem', href='/police') #{ __('Fraud Departement') }
               li.ibm-haschildlist(role='presentation', class=(insuranceActive ? 'ibm-highlight' : ''))
                 span(role='menuitem') #{ __('Insurance') }
                 ul(role='menu')

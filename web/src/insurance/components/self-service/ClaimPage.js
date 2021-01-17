@@ -23,15 +23,21 @@ class ClaimPage extends React.Component {
     };
   }
 
+
   constructor(props) {
     super(props);
 
-    this.state = { loading: false, isTheft: false, description: '' };
+    this.state = { loading: false, isTheft: false, description: '',value:'no',medicament : '-----'};
 
     this.submit = this.submit.bind(this);
     this.setTheft = this.setTheft.bind(this);
     this.setDescription = this.setDescription.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+
+
 
   submit() {
     const { isTheft, description } = this.state;
@@ -48,6 +54,7 @@ class ClaimPage extends React.Component {
       });
   }
 
+
   setTheft(event) {
     this.setState({ isTheft: !this.refs.theftField.checked });
   }
@@ -55,9 +62,29 @@ class ClaimPage extends React.Component {
   setDescription({ target }) {
     this.setState({ description: target.value });
   }
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    if(this.state.value === 'paracetamol'){
+    this.setState({medicament : 'Panadol'});
+    event.preventDefault();
+      }
+    if(this.state.value === 'med2'){
+      this.setState({medicament : 'Treat2'});
+      event.preventDefault();
+    }
+    if(this.state.value === 'no'){
+      this.setState({medicament : '-----'});
+      event.preventDefault();
+    }
+    
+  }
+
 
   render() {
-    const { loading, isTheft, description } = this.state;
+    const { loading, isTheft, description, } = this.state;
     const { user } = this.props;
 
     if (!user) {
@@ -79,7 +106,7 @@ class ClaimPage extends React.Component {
               <div className='ibm-column-form'>
                 <p className='ibm-form-elem-grp'>
                   <label>
-                    <FormattedMessage className='ibm-field-label' id='Theft' />:
+                    <FormattedMessage className='ibm-field-label' id='Fast Reimbursement offer' />:
                 </label>
                   <span className='ibm-input-group'>
                     <input type='checkbox' ref='theftField'
@@ -96,6 +123,25 @@ class ClaimPage extends React.Component {
                       onChange={this.setDescription} />
                   </span>
                 </p>
+
+                <p>
+                  <form onClick={this.handleSubmit}>
+                    <label>
+                      Select your Allergie:
+          <select value={this.state.value} onChange={this.handleChange}>
+                        <option value="no">-----</option>
+                        <option value="paracetamol">Paracetamol</option>
+                        <option value="med2">Medicament 2</option>
+                      </select>
+                      <p></p>
+                      <label>Midicine    </label>
+                    </label>
+                    <input value={this.state.medicament} />
+
+                  </form>
+                </p>
+                <div id="root"></div>
+                
               </div>
             </div>
           </div>
@@ -105,11 +151,16 @@ class ClaimPage extends React.Component {
                 onClick={this.submit}><FormattedMessage id='Submit' /></button>
             </div>
           </div>
+ 
+            
+
         </div>
       </Loading>
+
+
     );
   }
-}
+};
 
 function mapStateToProps(state, ownProps) {
   return {
@@ -118,3 +169,5 @@ function mapStateToProps(state, ownProps) {
 }
 
 export default withRouter(connect(mapStateToProps)(ClaimPage));
+
+

@@ -1,22 +1,28 @@
 export default {
   "medical-packages": [
     {
+      "model": "Platinium",
+      "price": 8000.0,
+      "imgSrc": "/img/products/plat.png",
+      "description": `Description :Includes 95% of reimbursement is ideal for big families, they are automatically covered at no additional charge. `
+    },
+    {
       "model": "Gold",
-      "price": 3420.0,
-      "imgSrc": "/img/products/bike1.png",
-      "description": `Colour: Grey <br> Type: All-Mountain`
+      "price": 6420.0,
+      "imgSrc": "/img/products/gold.png",
+      "description": `Description :Includes 75% of  reimbursement is ideal for big families,  is ideal for families because children age 17 or younger are automatically covered at no additional charge. `
     },
     {
       "model": "Silver",
-      "price": 2110.0,
-      "imgSrc": "/img/products/bike2.png",
-      "description": `Colour: Grey <br> Type: All-Mountain`
+      "price": 4110.0,
+      "imgSrc": "/img/products/silver.png",
+      "description": `Description :Includes 75% of reimbursement, ideal for an individual use.`
     },
     {
       "model": "bronze",
-      "price": 4050.0,
-      "imgSrc": "/img/products/bike3.png",
-      "description": `Colour: Black <br> Type: Pedelec`
+      "price": 2050.0,
+      "imgSrc": "/img/products/bronze.png",
+      "description": `Description : Includes 50% of reimbursement`
     },
   ],
   "smart-phones": [

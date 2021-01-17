@@ -14,6 +14,26 @@ import Loading from '../../../shared/Loading';
 import ClaimComponent from './ClaimComponent';
 import * as claimProcessingActions from '../../actions/claimProcessingActions';
 
+function fetchData(){
+  fetch('https://reqres.in/api/users')
+  .then(response => {
+    if (!response.ok){
+      throw Error("ERROR");
+  }
+  return response.json();
+})
+.then(data => {
+  console.log(data.data);
+  const html= data.data.map(user =>{
+    return `<p> Name : ${user.first_name}</p>`;
+  })
+  .join("");
+  console.log(html);
+  document.getElementById("present_result").innerHTML = html
+})
+}
+
+
 class ClaimsPage extends React.Component {
 
   static get propTypes() {
@@ -72,7 +92,16 @@ class ClaimsPage extends React.Component {
                 <FormattedMessage id='Unprocessed Claims' />
               </h3>
             </div>
+            
           </div>
+         <div id="present_result">
+         </div>
+
+          <div>
+          {fetchData()}
+          <button type="submit" onclick="getUsers">Search</button>
+          </div>
+          
           <div className='ibm-columns ibm-cards' style={{ minHeight: '30vh' }}
             data-widget='masonry' data-items='.ibm-col-2-1'>
             {claimsDisplay}
@@ -98,3 +127,5 @@ function mapDispatchToProps(dispatch) {
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(
   injectIntl(ClaimsPage)));
+
+  

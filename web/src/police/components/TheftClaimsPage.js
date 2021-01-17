@@ -43,12 +43,12 @@ class TheftClaimsPage extends React.Component {
       cards === null) ? cards :
       (
         <div className='ibm-col-5-5 ibm-col-medium-6-6'>
-          <FormattedMessage id='No outstanding theft claims.' />
+          <FormattedMessage id='No outstdanding claim.' />
         </div>
       );
     return (
       <Loading hidden={loading}
-        text={intl.formatMessage({ id: 'Loading Theft Claims...' })}>
+        text={intl.formatMessage({ id: 'Loading Claims...' })}>
         <div className='ibm-columns ibm-cards' style={{ minHeight: '30vh' }}
           data-widget='masonry' data-items='.ibm-col-6-2'>
           {claims}

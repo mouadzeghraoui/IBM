@@ -187,8 +187,8 @@ export const DEFAULT_CONTRACT_TYPES = [
     formulaPerDay: '50',
     maxSumInsured: 3000.00,
     theftInsured: false,
-    description: 'Universal Insurance Contract',
-    conditions: 'Universal Contract Terms here. For all types of goods.',
+    description: 'Insurance Contract plus',
+    conditions: 'Fast Reimbursement .',
     minDurationDays: 1,
     maxDurationDays: 10,
     active: true

@@ -173,7 +173,7 @@ class ChooseInsurancePage extends React.Component {
                   </span>
                 </p>
                 <p>
-                  <label><FormattedMessage id='Daily Price' />:</label>
+                  <label><FormattedMessage id='Minimum Coverage Price' />:</label>
                   <span>
                     <input type='text' readOnly value={
                       intl.formatNumber(dailyPrice,
@@ -186,7 +186,7 @@ class ChooseInsurancePage extends React.Component {
                 </p>
                 <p className='ibm-form-elem-grp'>
                   <label><FormattedMessage className='ibm-field-label'
-                    id='Theft Protection' />:</label>
+                    id='Fast Reimbursement ' />:</label>
                   <span className='ibm-input-group'>
                     <input type='checkbox' className='ibm-styled-checkbox'
                       ref='theftInsuredField'

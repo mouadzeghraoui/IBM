@@ -10,13 +10,13 @@ const app = ({ children, shopType }) => {
   let shopHeadingMessage;
   switch (shopType) {
     case 'medical-packages':
-      shopHeadingMessage = <FormattedMessage id='Medical Packages Shop' />;
+      shopHeadingMessage = <FormattedMessage id='Medical Packages Subscription' />;
       break;
     case 'smart-phones':
-      shopHeadingMessage = <FormattedMessage id='Smart Phone Shop' />;
+      shopHeadingMessage = <FormattedMessage id='Dental Insurance subscription' />;
       break;
     case 'skis':
-      shopHeadingMessage = <FormattedMessage id='Ski Shop' />;
+      shopHeadingMessage = <FormattedMessage id='Vision Insurance Subscription' />;
       break;
   }
 

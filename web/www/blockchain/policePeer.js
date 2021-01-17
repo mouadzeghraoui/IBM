@@ -16,7 +16,7 @@ export async function listTheftClaims() {
     const theftClaims = await query('theft_claim_ls');
     return theftClaims;
   } catch (e) {
-    throw wrapError(`Error getting theft claims ${e.message}`, e);
+    throw wrapError(`Error getting claims ${e.message}`, e);
   }
 }
 
@@ -29,7 +29,7 @@ export async function processTheftClaim(
     await invoke('theft_claim_process',
       { uuid, contractUuid, isTheft, fileReference });
   } catch (e) {
-    throw wrapError(`Error processing theft claim ${e.message}`, e);
+    throw wrapError(`Error processing claim ${e.message}`, e);
   }
 }
 

@@ -63,7 +63,7 @@ const ContractTemplatesPage = ({
     shopType = contractType.shopType.toUpperCase();
     return shopType.split('').map(l => {
       switch (l) {
-        case 'B': return intl.formatMessage({ id: 'Medical Packages Shops' });
+        case 'B': return intl.formatMessage({ id: 'Medical Packages Subscription' });
         case 'P': return intl.formatMessage({ id: 'Phone Shops' });
         case 'S': return intl.formatMessage({ id: 'Ski Shops' });
         default: return;

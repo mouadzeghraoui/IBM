@@ -59,13 +59,13 @@ class ChooseProductPage extends React.Component {
     let messageAtTop;
     switch (this.props.shopType) {
       case 'medical-packages':
-        messageAtTop = <FormattedMessage id='Buy a Medical Insurance Packages' />;
+        messageAtTop = <FormattedMessage id='Subscribe to a Medical Insurance Package' />;
         break;
       case 'smart-phones':
-        messageAtTop = <FormattedMessage id='Buy a sssSmart Phone' />;
+        messageAtTop = <FormattedMessage id='Subscribe to a Dental Insurance Package' />;
         break;
       case 'skis':
-        messageAtTop = <FormattedMessage id='Buy a Pair of Skis' />;
+        messageAtTop = <FormattedMessage id='Subscribe to a Vision Insurance Package' />;
         break;
     }
     let { intl, products } = this.props;
@@ -87,7 +87,7 @@ class ChooseProductPage extends React.Component {
           </div>
           <div className='ibm-columns'>
             <div className='ibm-col-2-1 ibm-col-medium-5-3 ibm-col-small-1-1'>
-              <label><FormattedMessage id='Choose a Product' />:</label>
+              <label><FormattedMessage id='Choose a Subscription' />:</label>
               <span>
                 <ProductCarousel products={products}
                   selectedProductIndex={productInfo.index}
@@ -99,13 +99,7 @@ class ChooseProductPage extends React.Component {
             <div className='ibm-col-2-1 ibm-col-medium-5-3 ibm-col-small-1-1'>
               <div className='ibm-column-form'>
                 <p>
-                  <label><FormattedMessage id='Product Brand' />:</label>
-                  <span>
-                    <input type='text' readOnly value={productInfo.brand} />
-                  </span>
-                </p>
-                <p>
-                  <label><FormattedMessage id='Product Model' />:</label>
+                  <label><FormattedMessage id='Subscription Type' />:</label>
                   <span>
                     <input type='text' readOnly value={productInfo.model} />
                   </span>
@@ -123,7 +117,7 @@ class ChooseProductPage extends React.Component {
                   </span>
                 </p>
                 <p>
-                  <label><FormattedMessage id='Serial No.' />:</label>
+                  <label><FormattedMessage id='Reference' />:</label>
                   <span>
                     <input type='text'
                       value={productInfo.serialNo}

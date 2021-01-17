@@ -62,7 +62,7 @@ class TheftClaimComponent extends React.Component {
         <div className='ibm-card ibm-border-gray-50'>
           <div className='ibm-card__content'>
             <h4 className='ibm-bold ibm-h4'>
-              <FormattedMessage id='Theft Claim' />
+              <FormattedMessage id='Claim Detail' />
             </h4>
             <div className='ibm-column-form' style={{ wordWrap: 'break-word' }}>
               <p>
@@ -70,15 +70,11 @@ class TheftClaimComponent extends React.Component {
                 <span>{theftClaim.name}</span>
               </p>
               <p>
-                <label><FormattedMessage id='Brand' />:</label>
-                <span>{theftClaim.item.brand}</span>
-              </p>
-              <p>
-                <label><FormattedMessage id='Model' />:</label>
+                <label><FormattedMessage id='Subscription Type' />:</label>
                 <span>{theftClaim.item.model}</span>
               </p>
               <p>
-                <label><FormattedMessage id='Serial No.' />:</label>
+                <label><FormattedMessage id='Serial No' />:</label>
                 <span>{theftClaim.item.serialNo}</span>
               </p>
               <p>

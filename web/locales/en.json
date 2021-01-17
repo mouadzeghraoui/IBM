@@ -6,8 +6,6 @@
 	"Shop Description": "This is the online shop.",
 	"Claim Self-Service": "Claim Self-Service",
 	"Claim Self-Service Description": "Claim Self-Service Description.",
-	"Repair Service": "Repair Shop",
-	"Repair Service Description": "Repair Shop Description.",
 	"Insurance": "Insurance",
 	"Medical Packages": "medical-packages",
 	"Medical Packages Description": "Choose your Medical Insurance Package",
@@ -17,7 +15,6 @@
 	"Skis Description": "Shop skis.",
 	"Go To The Shop": "Go To The Shop ",
 	"Go To The Self Service": "Go To The Self-Service",
-	"Go To The Repair Shop": "Go To The Repair Shop",
 	"Go To The Insurance": "Go To The Insurance",
 	"Go To The Medical Packages Shop": "Go To The Medical Packages Shop",
 	"Go To The Smart Phone Shop": "Go To The Smart Phone Shop",
@@ -35,8 +32,6 @@
 	"Go To The Claim Self-Service": "Go To The Claim Self-Service",
 	"Go To The Contract Management": "Go To The Contract Management",
 	"Go To The Claim Processing": "Go To The Claim Processing",
-	"Repair Shop": "Repair Shop",
 	"Go To The Shop Peer": "Go To The Shop Peer",
 	"Go To The Police Peer": "Go To The Police Peer",
-	"Go To The Repair Shop Peer": "Go To The Repair Shop Peer"
 }

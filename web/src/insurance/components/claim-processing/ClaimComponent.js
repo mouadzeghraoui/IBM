@@ -57,7 +57,7 @@ class ClaimComponent extends React.Component {
           className='ibm-btn-sec ibm-btn-small ibm-btn-blue-50'
           style={{ marginLeft: '15px', marginRight: '15px' }}
           onClick={this.repair}>
-          <FormattedMessage id='Repair' />
+          <FormattedMessage id='Approve' />
         </button>
       );
       const reimburseButton = c.isTheft && c.status !== 'P' ? null : (
@@ -98,7 +98,7 @@ class ClaimComponent extends React.Component {
                 <span><FormattedDate value={claim.date} /></span>
               </p>
               <p>
-                <label><FormattedMessage id='Theft Involved' />: </label>
+                <label><FormattedMessage id='Fast Reimbursement ' />: </label>
                 <span className='ibm-input-group'>
                   <input type='checkbox' className='ibm-styled-checkbox'
                     ref='theftField' checked={claim.isTheft}
